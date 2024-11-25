@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "caps": [
+    {
+      "type": "text",
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "type": "text",
+      "name": "appium:platformVersion",
+      "value": "15.0"
+    },
+    {
+      "type": "text",
+      "name": "appium:deviceName",
+      "value": "Generic_Appium_Inspector_Test_Phone"
+    },
+    {
+      "type": "text",
+      "name": "appium:app",
+      "value": "C:\\Users\\farom\\Downloads\\Quality Assurance Encompass\\Appium\\Sauce Labs Demo App\\app\\Android-MyDemoAppRN.1.3.0.build-244.apk"
+    },
+    {
+      "type": "text",
+      "name": "appium:automationName",
+      "value": "UIAutomator2"
+    },
+    {
+      "type": "number",
+      "name": "appium:newCommandTimeout",
+      "value": 900000
+    },
+    {
+      "type": "text",
+      "name": "appium:udid",
+      "value": "emulator-5556"
+    }
+  ],
+  "server": {
+    "local": {},
+    "remote": {
+      "hostname": "127.0.0.1",
+      "port": "4723",
+      "path": "/"
+    },
+    "advanced": {},
+    "sauce": {
+      "dataCenter": "us-west-1"
+    },
+    "headspin": {},
+    "browserstack": {},
+    "lambdatest": {},
+    "testingbot": {},
+    "experitest": {},
+    "roboticmobi": {},
+    "remotetestkit": {},
+    "bitbar": {},
+    "kobiton": {},
+    "perfecto": {},
+    "pcloudy": {},
+    "mobitru": {}
+  },
+  "serverType": "remote",
+  "visibleProviders": []
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<listeners>
+    <listener class-name="org.oluwatobitesting.TestUtils.Listeners"/>
+</listeners>
+    <test verbose="2" preserve-order="true" name="Log In Page Test">
+        <classes>
+            <class name="org.oluwatobitesting.LogInIT">
+                <methods>
+                    <include name="launchTest"/>
+                    <include name="logInWithoutUsername"/>
+                    <include name="logInWithoutPassword"/>
+                    <include name="logInWithInvalidCredentials"/>
+                    <include name="logInWithInvalidUsername"/>
+                    <include name="logInWithInvalidPassword"/>
+                    <include name="logInWithLockedOutUser"/>
+                    <include name="logInWithValidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Products Page Test">
+        <classes>
+            <class name="org.oluwatobitesting.ProductsIT">
+                <methods>
+                    <include name="sortProducts"/>
+                    <include name="rateProduct"/>
+                    <include name="addProductToCart"/>
+                    <include name="addToCartWithoutProduct"/>
+                    <include name="rateProductIndividualPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Cart Page Test">
+        <classes>
+            <class name="org.oluwatobitesting.CartIT">
+                <methods>
+                    <include name="navigateToCartPage"/>
+                    <include name="removeProductFromCart"/>
+                    <include name="reduceProductFromCart"/>
+                    <include name="addProductToCart"/>
+                    <include name="proceedToCheckout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Checkout Page Test">
+        <classes>
+            <class name="org.oluwatobitesting.CheckoutIT">
+                <methods>
+                    <include name="checkoutPageVerification"/>
+                    <include name="proceedToPaymentWithoutFullName"/>
+                    <include name="proceedToPaymentWithoutAddressLine1"/>
+                    <include name="proceedToPaymentWithoutCity"/>
+                    <include name="proceedToPaymentWithoutZipCode"/>
+                    <include name="proceedToPaymentWithoutCountry"/>
+                    <include name="proceedToPaymentWithValidDetails"/>
+                    <include name="checkSameBillingAddressCheckbox"/>
+                    <include name="reviewOrderWithoutFullName"/>
+                    <include name="reviewOrderWithInvalidCardNumber"/>
+                    <include name="reviewOrderWithInvalidExpirationDate"/>
+                    <include name="reviewOrderWithInvalidSecurityCode"/>
+                    <include name="checkSecurityCodeInfoButton"/>
+                    <include name="reviewOrderWithValidDetails"/>
+                    <include name="completedOrderValidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
